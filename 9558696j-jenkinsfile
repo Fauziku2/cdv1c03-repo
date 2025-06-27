@@ -6,7 +6,6 @@ pipeline {
                 echo "ST1-9558696j: Setup Release Environment Completed."
             }
         }
-
         stage('ST2-9558696j') {
             steps {
                 sh '''
@@ -16,13 +15,11 @@ pipeline {
                 echo "ST2-9558696j: Server1 is successfully created"
             }
         }
-
         stage('ST3-9558696j') {
             steps {
                 echo "ST3-9558696j: Server1 is healthy – Health check done"
             }
         }
-
         stage('ST4-Parallel-9558696j') {
             parallel {
                 stage('ST4A-9558696j') {
@@ -37,7 +34,6 @@ pipeline {
                 }
             }
         }
-
         stage('ST5-9558696j') {
             steps {
                 script {
@@ -56,7 +52,6 @@ pipeline {
                 }
             }
         }
-
         stage('ST6-9558696j') {
             steps {
                 echo "ST6-9558696j : Ready for next phase"
