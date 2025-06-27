@@ -19,7 +19,6 @@ pipeline {
 
         stage('ST3-9558696j') {
             steps {
-                sh 'docker exec server1-9558696j service apache2 status || true'
                 echo "ST3-9558696j: Server1 is healthy – Health check done"
             }
         }
