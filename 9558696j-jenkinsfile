@@ -34,7 +34,6 @@ pipeline {
                 }
             }
         }
-
         stage('ST5-9558696j') {
             steps {
                 script {
