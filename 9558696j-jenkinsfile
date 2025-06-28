@@ -21,6 +21,7 @@ pipeline {
                 echo "ST3-9558696j: Server1 is healthy – Health check done"
             }
         }
+
         stage('ST4-Parallel-9558696j') {
             parallel {
                 stage('ST4A-9558696j') {
