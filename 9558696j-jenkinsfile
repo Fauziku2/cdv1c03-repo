@@ -11,6 +11,7 @@ pipeline {
                 sh '''
                     docker rm -f server1-9558696j || true
                     docker run -dit -p 32700:80 --name server1-9558696j svr-image-9558696j
+                    docker exec server1-9558696j service apache2 start
                 '''
                 echo "ST2-9558696j: Server1 is successfully created"
             }
